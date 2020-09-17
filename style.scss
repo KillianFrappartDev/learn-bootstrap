@@ -24,4 +24,7 @@
 
 .card-img {
   @include makeImg(200px, 1.5rem);
+  &:hover {
+    background-color: red !important;
+  }
 }
