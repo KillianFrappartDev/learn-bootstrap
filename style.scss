@@ -1,0 +1,27 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin makeImg($height, $textSize) {
+  width: 100%;
+  height: $height;
+  @include center();
+  font-size: $textSize;
+}
+
+.carousel-img {
+  @include makeImg(300px, 2rem);
+}
+
+.header,
+.footer {
+  height: 200px;
+  font-size: 1.8rem;
+  @include center();
+}
+
+.card-img {
+  @include makeImg(200px, 1.5rem);
+}
